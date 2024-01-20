@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo-container {
+            width: 300px;
+            margin: 40px auto;
+        }
+
+        #logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* This maintains the aspect ratio of the image within the container */
+        }
+
+        #search-text {
+            margin: 10px auto; /* Added margin */
+            font-size: 18px;
+        }
+
+        #free-text-bar {
+            margin: 10px auto; /* Margin for free text bar */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .button-10 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            border-radius: 6px;
+            border: none;
+            color: #fff;
+            background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+            background-origin: border-box;
+            box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-10:focus {
+            box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+            outline: 0;
+        }
+
+        .lucky-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 14px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            border-radius: 6px;
+            border: none;
+            color: #fff;
+            background: linear-gradient(180deg, #e44d26 0%, #e44d26 100%);
+            background-origin: border-box;
+            box-shadow: 0px 0.5px 1.5px rgba(228, 77, 38, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .lucky-button:focus {
+            box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(228, 77, 38, 0.25), 0px 0px 0px 3.5px rgba(255, 90, 41, 0.5);
+            outline: 0;
+        }
+
+        /* New containers with shades of green */
+        .green-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px auto;
+            width: 95%;
+        }
+
+        .light-green {
+            background-color: #c0e9c2;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .medium-green {
+            background-color: #8fbe99;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .dark-green {
+            background-color: #679665;
+            width: 30%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo-container">
+        <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="Logo" id="logo">
+    </div>
+    <div id="search-text">
+        <p>Search the web using Google!</p>
+    </div>
+    <div id="free-text-bar">
+        <input type="text" placeholder="Enter text...">
+    </div>
+    <div class="button-container">
+        <button class="button-10" role="button"> Search</button>
+        <button class="lucky-button" role="button">I'm Feeling Lucky!</button>
+    </div>
+    <!-- New green containers -->
+    <div class="green-container">
+        <div class="light-green">Light Green</div>
+        <div class="medium-green">Medium Green</div>
+        <div class="dark-green">Dark Green</div>
+    </div>
+</body>
+</html>
